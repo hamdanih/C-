@@ -13,22 +13,29 @@ double vector_length(double x,double y,double z)
 
 int main ()
 {
-  double l;
-  double vector[3][1];
-  vector[3][1]=
+  double l,x,y,z;
+  // double vector[3][1];
+  cout << "input x : ";
+  cin >> x;
+  cout << "input y :";
+  cin >> y;
+  cout <<"input z :";
+  cin >> z;
+  double vector[3][1]={{x},{y},{z}};
+
 
   // cout << "input x : ";
-  // cin >> x;
+  // cin >> vector[0][0];
   // cout << "input y :";
-  // cin >> y;
+  // cin >> vector[1][0];
   // cout <<"input z :";
-  // cin >> z;
+  // cin >> vector[2][0];
   // // cout <<"input l:";
   // // cin >> l;
   // // calculate Re number
   // cout<< "the length is : ";
-  // l=vector_length(x,y,z);
-  // std::cout<< l <<std::endl;
+  l=vector_length(vector[0][0],vector[1][0],vector[2][0]);
+  std::cout<< l <<std::endl;
 
     return 0;
 }
